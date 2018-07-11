@@ -1,1 +1,6 @@
-
+Primero agregamos el repositorio de postgresql a nuestra lista de fuentes (sourse list) de UBUNTU:
+ sudo add-apt-repository "deb http://apt.postgresql.org/pub/repos/apt/ YOUR_UBUNTU_VERSION_HERE-pgdg main"
+Agregamos el "signing key" para autentificar el código.
+ wget --quiet -O - https://www.postgresql.org/media/keys/ACCC4CF8.asc | sudo apt-key add -
+ Por último actualizamos e instalamos PostgreSQL:
+ apt-get install postgresql-10
